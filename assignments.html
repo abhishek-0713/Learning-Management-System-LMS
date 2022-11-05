@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masai School - Assignments</title>
+    <link rel="stylesheet" href="./Styles/assignments.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="elements">
+        <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="" />
+        <a href="./user.html"><p>Lectures</p></a>
+        <a href="#" class="active"><p>Assignments</p></a>
+      </div>
+      <div>
+        <div class="guest"></div>
+        <a href="./index.html">Logout</a>
+      </div>
+    </div>
+    <div class="title">
+      <h2>Assignments</h2>
+    </div>
+    <div class="add">
+      <p>Filter assignments</p>
+      <form>
+        <div>
+          <label for="title">By title</label><br />
+          <select id="title" onchange="filterTitle()">
+            <option value="All">All</option>
+            <option value="Classes">Classes</option>
+            <option value="Import-Export">Import-Export</option>
+            <option value="Local Storage">Local Storage</option>
+            <option value="OOPS">OOPS</option>
+            <option value="Functions">Functions</option>
+            <option value="LLD">LLD</option>
+            <option value="Closures">Closures</option>
+            <option value="Complexity Analysi">Complexity Analysis</option>
+            <option value="Fetch">Fetch</option>
+            <option value="Sorting Algorithm">Sorting Algorithm</option>
+            <option value="Constructor Function">Constructor Function</option>
+            <option value="Prototype">Prototype</option>
+          </select>
+        </div>
+        <div>
+          <label for="schedule">By scheduled date</label><br />
+          <input type="date" id="schedule" onchange="filterDate()" />
+        </div>
+        <div>
+          <label for="add">Reset filters</label><br />
+          <button onclick="resetFilter()">Reset</button>
+        </div>
+      </form>
+    </div>
+    <div class="section">
+      <div class="lectures"></div>
+    </div>
+  </body>
+</html>
+<script src="./Scripts/assignments.js"></script>
