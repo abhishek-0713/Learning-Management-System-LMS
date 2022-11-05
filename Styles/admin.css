@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f3f4f6;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px 0px 10px;
+  background-color: white;
+  border-bottom: 0.5px solid gainsboro;
+}
+.nav > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.elements {
+  width: 35%;
+}
+a {
+  text-decoration: none;
+  color: black;
+  padding: 25px 0;
+}
+.active {
+  border-bottom: 2px solid #4f46e5;
+}
+.title {
+  padding: 25px 50px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 1.95px 1.95px 2.6px;
+}
+.section {
+  width: 80%;
+  background-color: white;
+  margin: 50px auto;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+}
+.add {
+  width: 80%;
+  background-color: white;
+  margin: 50px auto;
+  padding: 22px;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 22px 30px;
+  border-bottom: 0.5px solid rgb(214, 206, 206);
+  font-size: 18px;
+}
+.heading > p {
+  width: 100%;
+  text-align: start;
+}
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 22px 30px;
+  border-bottom: 0.5px solid rgb(214, 206, 206);
+  font-size: 18px;
+}
+.details > p {
+  width: 100%;
+  text-align: start;
+  color: #4f46e5;
+}
+.details > div {
+  width: 100%;
+  text-align: center;
+}
+#remove {
+  width: 40%;
+  background-color: rgb(205, 5, 5);
+  padding: 5px;
+  color: white;
+  border-radius: 3px;
+}
+form {
+  margin-top: 15px;
+  padding: 25px;
+  background-color: rgb(240, 236, 236);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* justify-content: space-evenly; */
+}
+input,
+select {
+  padding: 7px 12px;
+  font-size: 15px;
+  width: 29%;
+  margin-right: 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(174, 174, 177);
+}
+form > button {
+  padding: 7px 15px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.guest {
+  margin-right: 50px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masai School | Course</title>
+    <link rel="stylesheet" href="./Styles/signup.css" />
+  </head>
+  <body>
+    <div class="signup-page">
+      <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="" />
+      <form class="form">
+        <label for="email">Email</label><br />
+        <input type="email" id="email" /><br />
+        <label for="password">Password</label><br />
+        <input
+          type="password"
+          id="password"
+          placeholder="Min 8 characters"
+        /><br />
+        <label for="user-type">Select user</label><br />
+        <select id="user">
+          <option value="student">Student</option>
+          <option value="admin">Admin</option></select
+        ><br />
+        <button class="signup" onclick="signupUser()">SIGN UP</button>
+        <div>
+          <span id="registered">Already registered?</span
+          ><a href="./index.html">Log In.</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+<script src="./Scripts/signup.js"></script>

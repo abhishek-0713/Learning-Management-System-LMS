@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masai School - Admin Assignments</title>
+    <link rel="stylesheet" href="./Styles/adminAssignments.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="elements">
+        <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="" />
+        <a href="./admin.html"><p>Users</p></a>
+        <a href="./lecture.html"><p>Lectures</p></a>
+        <a href="#" class="active"><p>Assignments</p></a>
+      </div>
+      <div>
+        <div class="guest"></div>
+        <a href="./index.html">Logout</a>
+      </div>
+    </div>
+    <div class="title">
+      <h2>Assignments</h2>
+    </div>
+    <div class="add">
+      <p>Add lectures</p>
+      <form>
+        <div>
+          <label for="title">Title</label><br />
+          <select id="title">
+            <option value="Classes">Classes</option>
+            <option value="Import-Export">Import-Export</option>
+            <option value="Local Storage">Local Storage</option>
+            <option value="OOPS">OOPS</option>
+            <option value="Functions">Functions</option>
+            <option value="LLD">LLD</option>
+            <option value="Closures">Closures</option>
+            <option value="Complexity Analysi">Complexity Analysis</option>
+            <option value="Fetch">Fetch</option>
+            <option value="Sorting Algorithm">Sorting Algorithm</option>
+            <option value="Constructor Function">Constructor Function</option>
+            <option value="Prototype">Prototype</option>
+          </select>
+        </div>
+        <div>
+          <label for="type">Category</label><br />
+          <select id="type">
+            <option value="CODING">Coding</option>
+            <option value="DSA">Dsa</option>
+            <option value="SCRUM">Scrum</option>
+            <option value="CSBT">Csbt</option>
+            <option value="OJ">Oj</option>
+            <option value="FRONTEND">Frontend</option>
+          </select>
+        </div>
+        <div>
+          <label for="instructor">Instructor</label><br />
+          <select id="instructor">
+            <option value="Ankush">Ankush</option>
+            <option value="Swanand">Swanand</option>
+            <option value="Bicky">Bicky</option>
+            <option value="Shruthi">Shruthi</option>
+          </select>
+        </div>
+        <div>
+          <label for="schedule">Scheduled</label><br />
+          <input type="date" id="schedule" />
+        </div>
+        <div>
+          <label for="add">Add lecture</label><br />
+          <button onclick="addLecture()">Add</button>
+        </div>
+      </form>
+    </div>
+    <div class="section">
+      <div class="lectures"></div>
+    </div>
+  </body>
+</html>
+<script src="./Scripts/adminAssignments.js"></script>

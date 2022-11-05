@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+.signup-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f4f6;
+}
+.signup-page > img {
+  width: 190px;
+  margin-bottom: 25px;
+}
+.form {
+  background-color: #ffffff;
+  color: rgb(71, 70, 70);
+  width: 30%;
+  padding: 22px;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+input,
+select {
+  font-size: 16px;
+  padding: 10px;
+  background-color: #e8f0fe;
+  border-radius: 7px;
+  border: none;
+  width: 100%;
+  margin: 6px 0 20px 0;
+  border: 0.5px solid rgb(193, 190, 190);
+}
+#remember {
+  width: 20px;
+}
+#registered {
+  text-decoration: underline;
+}
+button {
+  padding: 9px 18px;
+  border-radius: 7px;
+  border: none;
+  background-color: #1f2937;
+  color: white;
+  font-weight: 600;
+}
+form > div {
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+}
+form > div > span {
+  margin-right: 10px;
+}
+a {
+  text-decoration: none;
+}

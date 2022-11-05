@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masai School - Admin</title>
+    <link rel="stylesheet" href="./Styles/admin.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="elements">
+        <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="" />
+        <a href="#" class="active"><p>Users</p></a>
+        <a href="lecture.html"><p>Lectures</p></a>
+        <a href="./adminAssignment.html"><p>Assignments</p></a>
+      </div>
+      <div>
+        <div class="guest"></div>
+        <a href="./index.html">Logout</a>
+      </div>
+    </div>
+    <div class="title">
+      <h2>Users</h2>
+    </div>
+    <div class="add">
+      <p>Add students</p>
+      <form>
+        <input type="email" id="email" placeholder="Email" />
+        <input type="text" id="pass" placeholder="Password" />
+        <select id="type">
+          <option value="student">Student</option>
+          <option value="admin">Admin</option>
+        </select>
+        <button onclick="addStudent()">Add</button>
+      </form>
+    </div>
+    <div class="section">
+      <div class="heading">
+        <p>Email</p>
+        <p>Password</p>
+        <p>User</p>
+        <p>Remove</p>
+      </div>
+      <div class="user-list"></div>
+    </div>
+  </body>
+</html>
+<script src="./Scripts/admin.js"></script>
