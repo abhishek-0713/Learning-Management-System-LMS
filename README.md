@@ -17,3 +17,4 @@ This is a Solo Project based on Concept of Oops - STUDENT LEARNING MANAGEMENT SY
 
 ### Admin Assignments Section
 ![image](https://user-images.githubusercontent.com/105943862/200131157-2c728054-56f2-4603-9fec-4099a01dea6a.png)
+
